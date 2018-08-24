@@ -1,4 +1,5 @@
 <div class="coin" *ngFor="let coin of coins">
+  <ryan-counter [label]="coin.coinName"></ryan-counter>
 	<ryan-coin [coin]="coin">
 	</ryan-coin>
 </div>

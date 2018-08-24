@@ -24,7 +24,7 @@ export class CoinService {
           const data = responseJSON.Data;
           return Object.keys(data).map(key => {
             return data[key];
-          }).splice(0, 10);
+          }).splice(0, 100);
         }),
         map((list: Array<CryptoCompareCoin>) => {
           return list.map(item => {

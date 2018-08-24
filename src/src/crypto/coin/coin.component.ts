@@ -11,7 +11,7 @@ export class CoinComponent {
 
   @Input()
   hasRedBackground = false;
-  
+
   @Input()
   coin: ICoinCard = {
     algorithmName: 'SDA',
@@ -20,7 +20,7 @@ export class CoinComponent {
     totalMarketCap: '1000000'
   };
 
-  test(): void {
+  emitCoinClickEvent(): void {
     this.onButtonClick.emit(this.coin);
   }
 }
