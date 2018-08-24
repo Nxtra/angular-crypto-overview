@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://www.cryptocompare.com",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

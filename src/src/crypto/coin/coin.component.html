@@ -1,0 +1,21 @@
+<div class="card" [class.red-background]="hasRedBackground">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="{{coin.imgUrl}}" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{coin.coinName}}</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Algorithm: {{coin.algorithmName}}</p>
+      <h5 class="coin-supply">MarketCap: {{coin.totalMarketCap}}</h5>
+    </div>
+    <a class="button is-warning" (click)="test()">Click here</a>
+  </div>
+  
+</div>
